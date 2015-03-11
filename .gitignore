@@ -1,0 +1,23 @@
+#     OS generated files       #
+################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# NODEJS ignore files #
+######################
+npm-debug.log
+node_modules
+
+# Compass/SASS ignore files #
+#############################
+.sass-cache
+.cache-frontend
+
+# Frontend ignore files #
+#########################
+.tmp
