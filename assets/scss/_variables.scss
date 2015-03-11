@@ -5,16 +5,22 @@ $legacy-support-for-ie8: true;
 
 $inline-block-alignment: top;
 
-$font-base-family: "PT Sans", Arial, sans-serif;
-$font-base-size-unit: 18;
-$font-base-size: 18px;
-$font-base-line-height-unit: 28;
-$font-base-line-height: 28px;
+$font-base-family: 'Roboto Slab', serif;
+$font-base-size-unit: 15;
+$font-base-size: 15px;
+$font-base-line-height-unit: 30;
+$font-base-line-height: 30px;
 
 $black: #000;
 $white: #fff;
+$blackberry: #5c5766;
+$orange: #ffd670;
 
 $bg-clr: (
-    black: $black,
+    header: $blackberry,
     white: $white
 );
+
+$text-clr: (
+    color: $orange
+)

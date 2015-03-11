@@ -1,0 +1,12 @@
+html,
+body {
+    color: $white;
+    font-size: $font-base-size;
+    font-family: $font-base-family;
+    min-width: 1502px;
+}
+
+    .l-center {
+        margin: 0 auto;
+        width: 1502px;
+    }

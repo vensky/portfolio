@@ -1,3 +1,53 @@
-#header {
+.header {
+    background: map-get($bg-clr, header);
+    min-height: 758px; 
+    padding: 62px 0 130px;
+    
+    &__title {
+        font-size: 66px; 
+        font-weight: 300;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        margin: 0 auto;
+        text-align: center;
+    }
 
+    &__hello {
+        display: block;
+        font-size: 35px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &__career {
+        display: block;
+        font-size: 22px;
+        font-weight: 100;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+        
+        abbr {
+            text-transform: uppercase;
+        }
+    }
+
+    &__info {
+        font-weight: bold;
+        text-align: center;
+        
+        dd, dt {
+            @include inline-block;
+            letter-spacing: 0.4em;
+        }
+
+        dt {
+            margin: 0 0 0 2%;
+        }
+
+        dd {
+            color: map-get($text-clr, color);
+            margin: 0 2% 0 10px;
+            text-transform: uppercase;
+        }
+    }
 }

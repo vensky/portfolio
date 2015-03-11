@@ -1,0 +1,25 @@
+.nav {
+    margin: 0 auto;
+    
+    &__list {
+        @extend %list-h;
+        text-align: center;
+        
+        li {
+            margin: 0 7%;
+        }
+    }
+
+    &__link {
+        @extend %no-link;
+        @include opacity(0.8);
+        color: $white;
+        font-size: $font-base-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        &:hover {
+            @include opacity(1);
+        } 
+    }
+}
