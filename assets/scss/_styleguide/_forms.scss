@@ -1,0 +1,49 @@
+%field {
+    background: $gray;
+    border: 0;
+    box-sizing: border-box;
+    color: rgba($white, 0.9);
+    display: block;
+    height: 49px;
+    padding: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &.invalid {
+        outline: 1px solid #972f34;
+    }
+}
+
+.form {
+    @include font-size(16);
+    font-family: 'circe-Light';
+    margin-top: 10px;
+    max-width: 388px;
+    
+    &__field {
+        @extend %field;
+        margin-bottom: 11px;
+    }
+
+    &__message {
+        @extend %field;
+        height: 143px;
+        margin-bottom: 11px;
+        resize: none;
+    }
+}
+
+    .btn-form {
+        @extend .btn;
+        background: rgba($white, .7);
+        color: rgba($black, .9);
+        height: 62px;
+        
+        &:hover {
+            background: rgba($white, .9);
+        }
+    }
