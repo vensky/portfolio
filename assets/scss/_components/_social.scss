@@ -1,4 +1,107 @@
 .social {
     @extend %list-h;
-    text-align: center;
+    text-align: center; 
+    
+    &__link-tw {
+        @include ring(48px, 3px, $social);
+        line-height: 48px;
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            width: 87px;
+            height: 2px;
+            display: block;
+            left: -87px;
+            top: 50%;
+            margin-top: -2px;
+            background: $social; 
+        }
+
+        &:hover {
+            border-color: #fff;
+            
+            &:before {
+                background: #fff; 
+            }
+            
+            .icon-twitter {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link-fb {
+        @include ring(48px, 3px, $social);
+        line-height: 48px;
+        margin: 0 26px;
+        
+        &:hover {
+            border-color: #fff;
+            
+            &:before {
+                background: #fff; 
+            }
+            
+            .icon-facebook {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link-git {
+        @include ring(48px, 3px, $social);
+        line-height: 48px;
+        position: relative;
+        
+        &:after {
+            content: "";
+            position: absolute;
+            width: 87px;
+            height: 2px;
+            display: block;
+            right: -87px;
+            top: 50%;
+            margin-top: -2px;
+            background: $social; 
+        }
+
+        &:hover {
+            border-color: #fff;
+            
+            &:before {
+                background: #fff; 
+            }
+            
+            .icon-git {
+                fill: #fff;
+            }
+        }
+    }
+
+}
+
+.icon-twitter {
+    fill: $social;
+    display: inline-block;
+    height: 19px;
+    width: 24px;
+    vertical-align: middle; 
+}
+
+.icon-git {
+    fill: $social;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    vertical-align: middle; 
+}
+
+.icon-facebook {
+    fill: $social;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    vertical-align: middle; 
 }

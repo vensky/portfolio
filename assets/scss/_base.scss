@@ -3,10 +3,22 @@ body {
     color: $white;
     font-size: $font-base-size;
     font-family: $font-base-family;
-    min-width: 1502px;
+    height: 100%;
 }
 
-    .l-center {
+    .wrapper-h {
         margin: 0 auto;
         width: 1502px;
+    }
+
+    .wrapper-v {
+        display: table-cell;
+        vertical-align: middle; 
+    }
+
+    %ring {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 100px;
+        width: 100px;
     }

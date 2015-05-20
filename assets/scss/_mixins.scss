@@ -91,3 +91,19 @@
     ::-moz-placeholder          {@content}
     :-ms-input-placeholder      {@content}  
 }
+
+@mixin ring($radius, $width, $color) {
+    border-radius: 50%;
+    border: $width solid $color; 
+    display: block; 
+    height: $radius;
+    width: $radius;
+}
+
+@mixin circle($radius, $color) {
+    background: $color; 
+    border-radius: 50%;
+    display: block; 
+    height: $radius;
+    width: $radius;
+}

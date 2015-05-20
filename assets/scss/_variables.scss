@@ -15,6 +15,7 @@ $black: #000;
 $white: #fff;
 $blackberry: #5c5766;
 $orange: #ffd670;
+$blackberry-light: #c4c0cf;
 
 $bg-clr: (
     header: $blackberry,
@@ -22,5 +23,8 @@ $bg-clr: (
 );
 
 $text-clr: (
-    color: $orange
-)
+    color: $orange,
+    logo: #4e4460
+);
+
+$social: $blackberry-light;

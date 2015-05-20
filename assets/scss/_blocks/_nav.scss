@@ -1,12 +1,14 @@
 .nav {
     margin: 0 auto;
+    padding: 62px 0 10px;
+    width: 100%;
     
     &__list {
         @extend %list-h;
         text-align: center;
         
         li {
-            margin: 0 7%;
+            margin: 0 6%;
         }
     }
 

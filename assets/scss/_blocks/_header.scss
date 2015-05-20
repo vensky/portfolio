@@ -1,15 +1,37 @@
 .header {
     background: map-get($bg-clr, header);
-    min-height: 758px; 
-    padding: 62px 0 130px;
+    display: table;
+
+    min-height: 100%; 
+    padding-top: 92px;
+    width: 100%;
+    text-align: center;
+    
+    &__logo {
+        @include circle(70px, #fff);
+        @include inline-block;
+        color: map-get($text-clr, logo);
+        font: 50px/55px 'Pacifico', cursive;  
+        position: relative;
+        vertical-align: middle;
+        
+        &:before {
+            @include ring(100px, 2px, #fff);
+            content: "";
+            left: -18px;
+            position: absolute;
+            top: -18px;
+            
+        }
+        
+    }
     
     &__title {
         font-size: 66px; 
         font-weight: 300;
         line-height: 70px;
         letter-spacing: 0.05em;
-        margin: 0 auto;
-        text-align: center;
+        margin: 48px auto;
     }
 
     &__hello {
@@ -24,19 +46,23 @@
         font-size: 22px;
         font-weight: 100;
         letter-spacing: 0.1em;
-        text-transform: lowercase;
         
-        abbr {
-            text-transform: uppercase;
+        &:first-letter {
+            text-transform: lowercase;
         }
     }
 
     &__info {
         font-weight: bold;
+        margin: 160px auto 0;
         text-align: center;
         
+        div {
+            display: inline-block;
+        }
+        
         dd, dt {
-            @include inline-block;
+            display: inline;
             letter-spacing: 0.4em;
         }
 
