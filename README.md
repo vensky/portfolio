@@ -36,4 +36,4 @@
 
 [Unitech](https://vensky.github.io/unitech) / [Repo](https://github.com/vensky/unitech)
 
-**HTML, Bootstrap, JS, Gulp**
+**HTML, Bootstrap**
