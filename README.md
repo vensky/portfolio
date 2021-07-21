@@ -1,5 +1,13 @@
 # Portfolio
 
+### Component "ExCalc" (2021)
+
+[ExCalc](https://excalc.000webhostapp.com/) / [Repo](https://github.com/vensky/excalc)
+
+**Vue, Vuetify, Axios, PHPMailer**
+
+---
+
 ### Landing page "Tire King" (2021)
 
 [Tire King](https://vensky.github.io/tire-king/build) / [Repo](https://github.com/vensky/tire-king)
